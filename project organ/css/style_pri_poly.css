@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:rgba(239, 212, 244, 0.925);
+  font-size:18px;
+
+
+}
+body .heading{
+color:rgb(80, 47, 190)
+}
+h1{
+    color:rgb(87, 16, 153)
+}
+body img{
+    float: left;
+}
+body h2{
+    margin-top:70px;
+    padding:90px;
+font-weight: 600;
+color:rgb(233, 29, 29);}
+/* :root{
+    --themeRed:#e43a47;
+    --gray:#efefef;
+} */
+body h1{
+    background-color: var(--themeRed);
+
+}

@@ -1,0 +1,321 @@
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2; /* Light gray background */
+}
+
+/* Container styles */
+.box {
+    background: #fff; /* White background */
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-left: 100px;
+    width: 800px; /* Max width for better responsiveness */
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+/* Image styles */
+#b1 img {
+   margin-top: 140px;
+    margin-left: 20px;
+    width: 500px; /* Increased width */
+    height: 500px; /* Maintain aspect ratio */
+}
+
+/* Form container styles */
+#b1 {
+    display: flex;
+   
+    
+    min-height: 100vh; /* Ensure the form is centered vertically */
+    background-image: conic-gradient(white, rgb(108, 135, 198), rgb(119, 131, 236), rgb(108, 118, 207), rgb(77, 178, 233), rgb(17, 108, 193)); /* Gradient background */
+}
+
+/* Form styles */
+#f1 {
+    text-align: center;
+}
+
+#f1 h1 {
+    margin-bottom: 20px;
+}
+
+#f1 p {
+    margin-bottom: 20px;
+    color: #555; /* Gray color for paragraph text */
+}
+
+#f1 label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+#f1 input[type="text"],
+#f1 input[type="email"],
+#f1 input[type="password"],
+#f1 input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#f1 input[type="submit"] {
+    background-color: #4CAF50; /* Green submit button */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+#f1 input[type="submit"]:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+#f1 .alternative {
+    font-size: larger;
+    margin-top: 20px;
+    color: #555; /* Gray color for alternative text */
+}
+
+
+            
+    /*Info pafe*/
+
+/* Form container styles */
+#b2 {
+    font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Ensure the form is centered vertically */
+    background-image: linear-gradient(rgb(108, 135, 198), rgb(130, 191, 238), rgb(17, 108, 193));
+    padding: 20px;
+}
+
+/* Form styles */
+#info {
+    background: #fff; /* Change background color to white */
+    border-radius: 10px;
+    width: 100%; /* Responsive width */
+    max-width: 800px; /* Limit maximum width */
+    padding: 40px; /* Increase padding */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+/* Input styles */
+#info input[type="text"],
+#info input[type="date"],
+#info input[type="tel"],
+#info select,
+#info textarea {
+    width: 100%;
+    padding: 15px; /* Increase padding */
+    margin: 10px 0; /* Increase margin */
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    background-color: #f5f5f5; /* Light gray background */
+}
+
+/* Checkbox and radio button styles */
+#info input[type="radio"],
+#info input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Submit button styles */
+#info input[type="submit"] {
+    width: auto;
+    padding: 15px 30px; /* Increase padding */
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+#info input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Textarea styles */
+#info textarea {
+    resize: vertical;
+}
+
+/* Optional: Styling for slider */
+/* Add your slider styles here if needed */
+
+
+    
+
+ /*   .slider {
+        position: relative;
+        width: 900px; 
+        margin-top: 200px;
+        margin-right: 10px;
+        overflow: hidden;
+    }
+    
+    .slides {
+        display: flex;
+        transition: transform 0.5s ease;
+    }
+    
+    .slide {
+        width: 100%; 
+        flex-shrink: 0; 
+    }
+    
+    .slide img {
+        width: 100%; 
+        height: auto; 
+    }
+    
+    .slider-nav {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px; 
+        width: 100%; 
+    }
+    
+    .slider-nav span {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background-color: #bbb;
+        border-radius: 50%;
+        cursor: pointer;
+        margin: 0 5px; 
+    }
+    
+    .slider-nav span.active {
+        background-color: #333;
+    }*/
+
+
+    /*login page*/
+
+/* Container styles */
+#b4 {
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: linear-gradient(rgb(108, 135, 198), rgb(130, 191, 238), rgb(17, 108, 193));
+}
+
+#login-container {
+    background: #fff;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+}
+
+/* Form styles*/
+#login-form {
+    text-align: center;
+}
+
+#login-form h2 {
+    margin-bottom: 20px;
+}
+
+#login-form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+#login-form input[type="text"],
+#login-form input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+}
+
+#login-form input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#login-form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+    
+    
+/*About section*/
+/* About section */
+#b3 {
+    font-family: Arial, Helvetica, sans-serif; /* Set font family */
+    font-size: 16px; /* Set base font size */
+    color: #333; /* Dark text color */
+    line-height: 1.6; /* Improve readability with increased line height */
+    margin: 0; /* Remove default margins */
+    padding: 20px; /* Add padding for content spacing */
+}
+
+#abtus {
+    background-image: url(iStock-1169662101.2e16d0ba.fill-735x490.jpg);
+    background-repeat: no-repeat;
+    background-size:cover ;
+    width: 100%;
+    height: 170px; /* Increase height of the header */
+    font-size: 100px; /* Decrease font size for the header */
+    color: #141314;
+    font-family:'Times New Roman', Times, serif;
+    margin-top: 30px;
+    /* Adjust padding for better alignment */
+     /* Center align the text */
+}
+
+.t1 {
+    border: 5px solid #caeded; /* Add border with appropriate color */
+    border-radius: 10px; /* Add border radius for rounded corners */
+    margin: auto; /* Center the container */
+    max-width: 800px; /* Limit the width for better readability */
+    padding: 20px; /* Add padding for content spacing */
+    background-color: #fff; /* White background */
+}
+
+.t1 h2 {
+    margin-top: 0; /* Remove default margin for consistency */
+    font-size: 24px; /* Decrease font size for subheadings */
+}
+
+#para {
+    margin-bottom: 20px; /* Add bottom margin for paragraph spacing */
+    color: #555; /* Dark gray text color */
+    line-height: 1.5; /* Improve readability with increased line height */
+}
+
+#para:last-child {
+    margin-bottom: 0; /* Remove bottom margin for last paragraph */
+}

@@ -1,0 +1,398 @@
+/* creating css3 variable */
+:root{
+    --themeRed:#e43a47;
+    --gray:#efefef;
+}
+
+html {
+ 
+    scroll-behavior: smooth;
+    
+
+}
+body .about_donation p{
+    font-size: 15px;
+    color: #000;
+
+    
+}
+body .about_donation p i{
+    color:rgb(198, 83, 137);
+    box-shadow: #000;
+}
+
+button,body{
+    font-family:"Poppins", sans-serif;
+}
+/*it change the size and the font style of the nav bar */
+*{
+    margin:0;
+    padding:0;  
+    /* padding remove the dots from the start in the nav bar */
+    box-sizing:border-box;
+}
+.fullContainer{
+    width:100%;
+}
+.container{
+    width:1140px;
+    /* due to width the logo and the nav bar is in between */
+    margin:auto;
+
+}
+
+.sectiontitle{
+    width:300px;
+    border-bottom: 3px solid var(--themeRed);
+    text-align:center;
+    font-size:2rem;
+    font-weight:200;
+    margin:0 auto 50px;
+    position:relative;
+    padding: 10px 0;
+    text-transform: uppercase;
+
+
+}
+
+
+footer {
+    background-color: #0658A2;
+    padding: 20px 0;
+    color: #fff;
+    
+    left: 0;
+    bottom: 0;
+    width: 1500px;
+  }
+
+  .top
+  {
+    display: flex;
+    justify-content: space-between;
+    margin-right: auto;
+  }
+
+  .footer-links{
+    padding-left: 10px;
+    
+
+}
+ 
+  .legal-info{
+    text-align: center;
+  }
+
+.sectiontitle::after{
+    /*  no space after sectiontitle and semicolon */
+     display:inline-block;
+     content:"";
+     height: 15px;
+     width: 15px;
+     background-color: var(--themeRed);
+     position:absolute;
+     left:calc(50% - 10px);
+     top:calc(75% - 7px);
+     /* space after and before -  is imp*/
+     transform: rotate(45deg) translate(50%, 50%);
+     border:3px solid #fff;
+
+
+
+
+} 
+.section{
+    padding:100px;
+    position: relative;
+}
+/* home style start */
+
+header{
+    width:100%;
+    background-color: rgba(0,0,0,.6); 
+    /* it give light black bg for the header */
+    /* RGBA is an extension of the RGB color model. The acronym stands for red ,green, blue alpha. The alpha value represents the level of transparency/opacity of the color. */
+    position: fixed;
+    z-index: 2;
+}
+header .container{
+    display:flex;
+    /* ye nav bar ko lgo ki image ke side me kr dega agr hm flex nhi lagaenge to ye nav bar ko logo ke navbar le aayega */
+    justify-content: space-between;
+    /*  ye space ko manage kr rha h */
+}
+header .container .logo{
+    padding: 15px 0;
+    height: 75px;
+
+}
+header .conatiner .logo .img{
+    height: 100%;
+
+
+}
+header  nav ul{
+    list-style-type: none;
+}
+header nav ul li{
+  display: inline-block;  
+}
+header nav ul li a{
+
+    display:inline-block;
+    height: 75px;
+    line-height: 75px;
+    padding: 0 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 16px;
+    color:#fff;
+    transition: 0.3s;
+}
+header nav ul li a:hover {
+
+    background-color: var(--themeRed);
+}
+.banner{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('../image/background_organ.jpg');
+    background-size:cover ;
+    /* background-attachment: fixed; */
+}
+.banner h1{
+
+    margin-top: 230px;
+    /* agr hm inline block ni krenge to jo img h vo top se neeche aa jaegi */
+    display:inline-block;
+    font-size:3.5rem;
+    color:#fff;
+    text-shadow:0 0 2px #000;
+    width:50%;
+    /* line-height:402rem; */
+    font-weight: 100;
+
+}
+.banner h1 span{
+    background-color: var(--themeRed);
+    display:inline-block;
+    line-height: 3.5rem;
+    padding: 0 15px;
+    font-weight: 600;
+    border-radius: 5px;
+
+}
+p{
+    font-size: 14px;
+    line-height: 26px;
+}
+.banner p{
+    color:#fff;
+    width:50%;
+    /*  the para is covered in 50 % area */
+    text-shadow:0 0 2px #000;
+    margin-top:10px ;
+}
+.banner button{
+    cursor: pointer;
+
+    background-color: var(--themeRed);
+    border:0;
+    outline: none;
+    color:#fff;
+    padding:10px 15px;
+    margin-top :20px;
+    font-size:13px;
+    border-radius: 3px;
+    font-weight: 600;
+
+
+}
+/* .cards .donationbox{
+    width:25%;
+    padding-left: 5px;
+    display: block;
+}
+.cards .volunteerbox{
+    width:25%;
+    padding-left: 10px;
+    display: block;
+} */
+/* home style end */
+
+
+
+
+#aboutsection .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+    position: relative;
+    height:245px;
+
+}
+#aboutsection .cards > div {
+    width: 500px;
+    background-color: var(--gray);
+    padding: 35px;
+    color:#555;
+    text-Align:center;
+    border-radius: 5px;
+    height: 250px;
+    border: 1px solid #ccc;
+    transition: 0.4s;
+}
+/* same but difference only div */
+
+/* #aboutsection .cards .donationbox {
+    width: 350px;
+    background-color: var(--themeRed);
+}
+#aboutsection .cards .volunteerbox {
+    width: 350px;
+    background-color: var(--themeRed);
+}
+#aboutsection .cards .scholarshipbox {
+    width: 350px;
+    background-color: var(--themeRed);
+} */
+
+#aboutsection .cards >div:hover {
+
+    width:400px;
+    margin-top: -20px;        /* margin top box ko  natural size se jyada bda dethi h */
+    border-color:var(--themeRed) ;
+    padding: 55px;
+    height: auto;
+}
+#aboutsection .cards >div .title {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+#aboutsection .cards > div p{
+  font-size: 14px;
+  margin-top: 15px;  
+}
+#aboutsection .cards >div button {
+    border: 1px solid var(--themeRed);
+    outline:none;
+    padding: 7px 15px;
+    margin-top: 15px;
+    font-size:12px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition:0.3s;
+}
+#aboutsection .cards > div:hover button{
+    background-color: var(--themeRed);
+    color:#fff;
+} 
+/* program section start */
+/*
+.programs{
+    background-color: #e2e2e2;
+    
+}
+.programs .boxcontainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap:50px;
+}
+
+.programs .boxcontainer .box {
+    background-color: #fff;
+    text-align: center;
+    padding-bottom: 25px;
+    border-radius:5px;
+    box-shadow:0 0 3px #c5c5c5;
+    position: relative;
+    margin-bottom:15px;
+
+}
+.programs .boxcontainer .box .cardimage{
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    position:relative;
+    overflow :hidden;
+    border-radius: 5px 5px 0 0; 
+    
+}
+
+
+.programs .boxcontainer .box .cardimage:after {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    content: "";
+    position:absolute;
+    left: 0;
+    top: 0;
+    filter: grayscale(100%);
+    transition: 0.4s;
+}
+.programs .boxcontainer .box:nth-child(1) .cardimage,
+
+.programs .boxcontainer .box:nth-child(1) .cardimage:after{
+    background-image: url('../image/programs/1.jpg');
+}
+.programs .boxcontainer .box:nth-child(2) .cardimage,
+
+.programs .boxcontainer .box:nth-child(2) .cardimage:after{
+    background-image: url('../image/programs/2.jpg');
+}
+.programs .boxcontainer .box:nth-child(3) .cardimage,
+
+.programs .boxcontainer .box:nth-child(3) .cardimage:after{
+    background-image: url('../image/programs/3.jpg');
+}
+.programs .boxcontainer .box:nth-child(4) .cardimage,
+
+.programs .boxcontainer .box:nth-child(4) .cardimage:after{
+    background-image: url('../image/programs/4.jpg');
+}
+
+
+/* now we add effect after click at the image */
+/*
+.programs .boxcontainer .box:hover .cardimage:after {
+
+    top:100%;
+    /* transition: 0.4s; */
+
+/*
+.programs .boxcontainer .box .programtitle{
+    font-size: 16px;
+    margin-top: 15px;
+    font-weight:600;
+    color:#444
+}
+.programs .boxcontainer .box .donationcount {
+
+    font-size: 13px;
+    font-weight: 600;
+    color:#444;
+    margin-top:10px;
+}
+.programs .boxcontainer .box .donationcount span{
+    color:var(--themeRed);
+}
+
+.programs .boxcontainer .box button{
+    position: absolute;
+    left: 50%;
+    background-color: var(--themeRed);
+    transform: translate(-50%);
+    bottom: -15px;
+    border-radius: 60px;
+    color:#fff;
+    padding:7px 15px;
+    border:0;
+    outline:none;
+    cursor: pointer;
+}
+/* program section end */

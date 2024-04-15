@@ -1,0 +1,79 @@
+*{
+    font-family: "open Sans",sans-serif;
+    box-sizing:border-box;
+}
+body{
+    min-height:100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(72, 152, 147);
+}
+.type{
+    background-image: url("../image/deceased.jpg");
+background-repeat: no-repeat;
+    background-size: 55%;
+background-color: rgb(72, 152, 147);
+overflow:hidden;
+/* overflow-y: auto;
+overflow-x: auto; */
+padding:100px 0;
+
+
+
+}
+
+/* .sectiontitle{
+    width:300px;
+   //text-align:center; 
+    margin:0 auto 50px;
+    position:relative;
+    padding: 10px 0;
+    text-transform: uppercase;
+
+
+}
+.sectiontitle::after{
+     // no space after sectiontitle and semicolon  
+     display:inline-block;
+     content:"";
+     height: 15px;
+     width: 15px;
+     background-color: var(--themeRed);
+     position:absolute;
+     left:calc(80% - 10px);
+     top:calc(90% - 7px);
+    // space after and before -  is imp
+     transform: rotate(45deg) translate(50%, 50%);
+     border:3px solid #fff;
+} */
+
+.text {
+    width:55%;
+    float:right;
+    background-color: #8dd5cd;
+    padding:150px;
+
+}
+.text h1{
+    margin-bottom: 30px;
+    font-size:30px;
+    font-weight: 900;
+    margin:0 auto 50px;
+    position:relative;
+    padding: 10px 0;
+    text-transform: uppercase;
+
+
+}
+h1{
+    color:rgb(36, 87, 135);
+   
+}
+
+h2{
+    color:rgb(54, 119, 63)
+}
+h3{
+    color:rgb(114, 27, 120)
+}

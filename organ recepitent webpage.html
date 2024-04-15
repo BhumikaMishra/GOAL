@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Organ Recipient</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      /* Set the background image */
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUF_N3FDP5chh-6lPdn3OBIas93asYAH6Huw&s'), 
+                        url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUF_N3FDP5chh-6lPdn3OBIas93asYAH6Huw&s');
+      background-size: cover;
+      background-position: center;
+    }
+    
+    header {
+      background-color: rgba(255, 255, 255, 0.5);
+      color: whitesmoke;
+      padding: 20px;
+      text-align: center;
+      /* Add animation */
+      animation: rainbow 5s linear infinite alternate;
+    }
+
+    /* Add animation keyframes */
+    @keyframes rainbow {
+      0% {
+        color: red;
+      }
+      20% {
+        color: orange;
+      }
+      40% {
+        color: yellow;
+      }
+      60% {
+        color: green;
+      }
+      80% {
+        color: blue;
+      }
+      100% {
+        color: violet;
+      }
+    }
+
+    /* Make the header text a bit funky */
+    h1, .goal-header {
+      font-size: 3em;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Style for the box */
+    .content-box {
+      background-color: rgba(0, 0, 0, 0.6); /* Adjusted to provide contrast */
+      padding: 20px;
+      margin: 20px;
+      width: 300px;
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+    }
+
+   
+    .content-box h2 {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  margin: 0; /* Add this line to remove default margin */
+  background: none; /* Remove the white background color */
+}
+
+
+    /* Style for the G.O.A.L acronym header */
+    .goal-header {
+      animation: rainbow 5s linear infinite alternate; /* Apply rainbow color effect */
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="goal-header">
+      <h2>G.O.A.L</h2>
+    </div>
+    <h1>Organ Recipient</h1>
+  </header> 
+  <div class="content-box">
+    <h2 onclick="navigateToNextPage()">Do You Need Organ ?</h2>
+  </div>
+
+  <script>
+    function navigateToNextPage() {
+      window.location.href = "Receptient.html"; // Change the URL to the desired page
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Organ Donor Form</title>
+<style>
+ body {
+    
+    font-family: Arial, sans-serif;
+    background-color: rgb(63, 146, 139);
+    margin: 0;
+    padding: 0;
+  }
+   
+    
+  form {
+    background-color: #eef1f5;
+    max-width: 600px;
+    margin: 20px auto;
+    color:#000000;
+    padding: 20px;
+
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  input[type="text"], input[type="email"], select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+ .download{
+ /* background-color:red ;*/
+  color:white;
+  border:2px;
+  border-radius: 5px;
+  cursor:pointer;
+  width:30%;
+
+ }
+  .fieldset{
+  border-color: #946540;
+      border-width: 5px;
+      border-radius: 5px;
+  }
+</style>
+</head>
+<body>
+
+<form action="http://localhost:3000/reg_form" onsubmit="return validateForm()" id="downloadableForm" class="donor_reg">
+  <fieldset style="width:580px;" class="fieldset" >
+    <legend>
+        <b>Registration Form</b>
+    </legend>
+  <h2>Organ Donor Form</h2>
+  
+
+<div>
+  <label for="name" >First Name:</label>
+  <input type="text"  placeholder="enter your first name" id="name" name="name" required>
+</div>
+<br>
+<div>
+  <label for="name" >Last Name:</label>
+  <input type="text"  placeholder="enter your last name" id="name" name="name" required>
+</div>
+<br>
+  <!-- <label for="email">Email:</label>
+  <input type="email" placeholder="your email id" id="email" name="email" required> -->
+<div>
+  <input type="email" id="emailInput" placeholder="Enter your email">
+<button onclick="validateEmail()">Validate</button>
+<p id="emailError" style="color: red;"></p>
+</div>
+<br>
+<div>
+  <label for="name" >Father's/Mother's/Guardian's  Name :</label>
+  <input type="text"  placeholder="father's/mother's/Guardian' name" id="name" name="name" required>
+</div>
+<br>
+  <div>
+
+    <label for="dob">Date Of Birth:</label>
+    <input type="date" placeholder="DD/MM/YYYY"  id="dob" name="dob" required>
+  </div>
+  <br>
+  <div>
+
+    <label for="age">Age:</label>
+    <input type="number" placeholder="your age" id="age" name="age" required>
+    
+  </div>
+  <br>
+
+  <div>
+
+    <label for="gender">Gender:</label>
+    
+    <input type="radio" id="gender" name="gender"  required>Male
+    <input type="radio" name="gender" required>female
+    <input type="radio" name="gender" required>other
+
+
+  </div>
+  <br>
+<div>
+    <label for="bloodType">Blood Type:</label>
+  <input type="text" id="bloodType" name="bloodType" placeholder="your blood type" required>
+    
+  </div>
+  <br>
+  <div>
+  <label for="Mobile number">Mobile Number:</label>
+  <input type="number" placeholder="  your mobile number " id="mobile number" name="mobile number" required>
+
+</div>
+<br>
+
+<div>
+<label for=" guardian Mobile number"> Guardian Mobile Number:</label>
+<input type="number" placeholder="guardian mobile number " id=" guardian mobile number" name=" guardian mobile number" required>
+
+</div>
+<br>
+<div>
+  <label for="address" >Current Residential Address:</label>
+  <input type="text"  placeholder="House number/flat number society name gali number" id="address" name="address" required>
+</div>
+<br>
+<div>
+  <label for="address" >Landmark Address:</label>
+  <input type="text"  placeholder="street address,landmark" id="address" name="address" required>
+</div>
+<br>
+<div>
+  <label for="city">City:</label>
+  <input type="text" placeholder="your city name" id="city" name="city" required>
+
+</div>
+<br>
+</div>
+  <label for="district">District:</label>
+  <input type="text" placeholder="your district name" id="district" name="district" required>
+</div>
+<br>
+<div>
+  <label for="state">State:</label>
+  <input type="text" placeholder="your state name" id="state" name="state" required>
+</div>
+<br>
+<div>
+  <label for="pin code">Pin Code:</label>
+  <input type="number" placeholder=" district pincode " id="pin code" name="pin code" required>
+</div>
+<br>
+  
+<div>
+
+
+  <label for="occupation">Occupation:</label>
+  <select id="occupation" name="occupation" required>
+    <option value="">Select...</option>
+    <option value="Student">Student</option>
+    <option value="Business">Business</option>
+    <option value="Professional">Professional</option>
+    <option value="Self Employed">Self Employed</option>
+    <option value="Government Employed">Government Employed</option>
+
+    <option value="Armed Forces">Armed Forces</option>
+    <option value="Retired">Retired</option>
+    <option value="HomeMaker">HomeMaker </option>
+    <option value="Others">Others</option>
+
+
+
+  </select>
+</div>
+<br>
+<label for="id card">Choose idetity card:</label>
+  <select id="id card" name="id card" required>
+    <option value="">Select...</option>
+    <option value="PAN card">PAN card</option>
+    <option value="Aadhar card">Aadhar card</option>
+    <option value="voter id">voter id</option>
+    
+  </select>
+</div>
+
+<br>
+<div>
+
+    <label for="id card number"> Enter your identity card number:</label>
+    <input type="text" placeholder="enter your id card number" id="id number" name="id number">
+</div>
+<br>
+
+
+<div>
+
+    <label for="donate organ"> Organs that i want to donate:</label>
+    <br>
+    <input type="checkbox" name="organ donate">All organs
+    <input type="checkbox" name="organ donate">Corneas(eye)
+    <input type="checkbox" name="organ donate">kidneys
+    <input type="checkbox" name="organ donate">Heart
+    <input type="checkbox" name="organ donate">lungs
+    <input type="checkbox" name="organ donate">liver
+    <input type="checkbox" name="organ donate">Pancreas
+    <input type="checkbox" name="organ donate">Small Intestine
+    <input type="checkbox" name="organ donate">Skin
+
+</div>
+<br>
+<div>
+    <label for="about us">Why you want to donate your organ ?</label>
+    <textarea name="text area" id="something" cols="30" rows="10"></textarea>
+</div>
+<br>
+
+<div class="row">
+    
+    <div class="donate checkbox">
+
+        <input type="checkbox" name="privacy policy" value="privacy policy" id="privacy policy">
+        <label for="privacy policy">
+          
+
+            "I agree to the privacy policy &nbsp;"
+            <!-- <a href="from our website link" target="_blank" class="read more">Read More</a> -->
+            <button onclick="openprivacyPolicyForm()" class="pripoly_button">Read More</button>
+
+
+        </label>
+        
+
+    </div>
+</div>
+
+<script>
+  function validateEmail() {
+      const emailInput = document.getElementById('emailInput');
+      const emailError = document.getElementById('emailError');
+      const email = emailInput.value.trim();
+      
+      // Regular expression for validating email
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  
+      if (emailRegex.test(email)) {
+          emailError.textContent = ''; // Clear any previous error message
+          console.log('Valid email address:', email);
+          // You can proceed with further actions if the email is valid
+      } else {
+          emailError.textContent = 'Please enter a valid email address';
+          console.log('Invalid email address:', email);
+      }
+  }
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<div class="submit">
+  <input type="submit" value="Submit"><br>
+  <!-- for download the form -->
+</div>
+<br>
+  <div class="download">
+<button onclick="downloadForm()">Download Form </button>
+
+</div>
+  </fieldset>
+</form>
+<script>
+  function validateForm() {
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+    var email = document.getElementById("email").value;
+
+    if (username == "") {
+      alert("Username must be filled out");
+      return false;
+    }
+
+    if (password.length < 8) {
+      alert("Password must be at least 8 characters long");
+      return false;
+    }
+
+    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!email.match(emailPattern)) {
+      alert("Invalid email address");
+      return false;
+    }
+
+    return true;
+  }
+</script>
+
+<script>
+  function downloadForm() {
+    var formContent = document.getElementById('downloadableForm').outerHTML;
+    var blob = new Blob([formContent], { type: 'text/html' });
+    var url = URL.createObjectURL(blob);
+    
+    var a = document.createElement('a');
+    a.href = url;
+    a.download = 'downloadable_form.html';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  }
+  </script>
+
+
+
+  <script>
+    function openprivacyPolicyForm() {
+        // URL of the proivacy policy form
+        var privacyPolicyUrl = "priv_poly.html";
+        
+        // Open the registration form in a new tab
+        window.open(privacyPolicyUrl);
+    }
+    </script>
+
+
+</body>
+</html>

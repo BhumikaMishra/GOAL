@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="slider.js"></script>
+</head>
+<body id="b2">
+    
+      
+    <form method="POST""  id="info">
+        <h3>Personal Information</h3>
+        <label for="fname">First name:  </label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <label for="dob">Date of Birth: </label>
+        <input type="date" name="dob" id="dob"><br><br>
+        <label for="gender">Gender: </label><br>
+        <div id="gender" style="padding-left: 30px;">
+            <input type="radio" id="gender" name="gender">
+            <label for="Male">Male</label><br>
+            <input type="radio" id="gender" name="gender">
+            <label for="Female">Female</label><br>
+            <input type="radio" id="gender" name="gender">
+            <label for="Others">Others</label><br><br>
+        </div>
+        <label for="bloodtype">Blood Type:</label>
+        <select name="bloodtype" id="bloodtype" name="bloodtype">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="O">O</option>
+            <option value="AB">AB</option>
+        </select><br><br>
+        <label for="cn">Contact Number: </label>
+        <input type="tel" id="cn" name="cn"><br><br><br><br>
+
+        <h3>Address:</h3>
+        <label for="street">Street Address: </label>
+        <input type="text" id="street" name="street"><br><br>
+        <label for="city">City: </label>
+        <input type="text" name="city" id="city"><br><br>
+        <label for="state">State: </label>
+        <input type="text" id="state" name="state"><br><br>
+        <label for="zip">ZIP/Postal Code: </label>
+        <input type="text" name="zip" id="zip"><br><br>
+        <label for="country">Country: </label>
+        <input type="text" name="country" id="country"><br><br><br><br>
+        <h3>Medical Information: </h3>
+        <ol>
+            <li><label for="medications">Are you currently on any medications? If yes, please specify:</label><br>
+                <input type="radio" name="medications" id="yes">
+                <label for="yes">Yes</label><br>
+                <input type="radio" name="medications" id="no">
+                <label for="no">No</label><br>
+                <textarea name="medications" id="medications" cols="100" rows="5"></textarea>
+            </li>
+            <li><label for="condition">Do you have any known medical conditions? If yes, please specify:</label><br>
+                <input type="radio" name="condition" id="yes">
+                <label for="yes">Yes</label><br>
+                <input type="radio" name="condition" id="no">
+                <label for="no">No</label><br>
+                <textarea name="condition" id="condition" cols="100" rows="5"></textarea>
+            </li>
+            <li><label for="surgery">Have you undergone any major surgeries in the past? If yes, please specify:</label><br>
+                <input type="radio" name="surgery" id="yes">
+                <label for="yes">Yes</label><br>
+                <input type="radio" name="surgery" id="no">
+                <label for="no">No</label><br>
+                <textarea name="surgery" id="surgery" cols="100" rows="5"></textarea>
+            </li>    
+        </ol>
+        <h3>Donation Preferences:</h3>
+        <p>Select the organs/tissues you are willing to donate:</p>
+        <label><input type="checkbox" name="organs[]" value="Heart"> Heart</label><br>
+        <label><input type="checkbox" name="organs[]" value="Lungs"> Lungs</label><br>
+        <label><input type="checkbox" name="organs[]" value="Liver"> Liver</label><br>
+        <label><input type="checkbox" name="organs[]" value="Kidneys"> Kidneys</label><br>
+        <label><input type="checkbox" name="organs[]" value="Pancreas"> Pancreas</label><br>
+        <label><input type="checkbox" name="organs[]" value="Intestines"> Intestines</label><br>
+        <label><input type="checkbox" name="tissues[]" value="Corneas"> Corneas</label><br>
+        <label><input type="checkbox" name="tissues[]" value="Skin"> Skin</label><br>
+        <label><input type="checkbox" name="tissues[]" value="Bone"> Bone</label><br>
+        <label><input type="checkbox" name="tissues[]" value="Bone Marrow"> Bone Marrow</label><br>
+    
+        <h3>Additional Information: </h3>
+        <label for="how_heard">How did you hear about us?</label><br>
+        <input type="text" id="how_heard" name="how_heard"><br>
+
+        <h3>Terms and Conditions: </h3>
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">By signing up, you agree to the terms and conditions of our organ donation program.</label><br>
+
+        <input type="submit" value="Submit">
+    </form>
+   <!-- <div class="slider">
+        <div class="slides">
+          <div class="slide"><img src="https://www.organdonor.gov/sites/default/files/organ-donor/learn/statistics/organs-people-waiting-2023_0.jpg" alt="Image 1"></div>
+          <div class="slide"><img src="https://w.ndtvimg.com/sites/26/2018/11/05115623/ORGAN-DONATION_myth_fact-640-320.jpg" alt="Image 2"></div>
+          <div class="slide"><img src="https://unos.org/wp-content/uploads/2019-stats_UNOS.png" alt="Image 3"></div>
+        </div>
+        <div class="slider-nav">
+          <span class="nav-dot"></span>
+          <span class="nav-dot"></span>
+          <span class="nav-dot"></span>
+        </div>
+      </div> -->
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const signupForm = document.getElementById('info');
+        
+            signupForm.addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent default form submission
+                
+                // You can add form validation here if needed
+                
+                // Redirect to project.html
+                window.location.href = 'project.html';
+            });
+        });
+        </script>
+</body>
+</html>

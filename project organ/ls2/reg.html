@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp/Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="validate.js"></script>
+</head>
+<body id="b1">
+    <img src="https://media0.giphy.com/media/rrK4CMjW1b6GOEfHHa/200w.gif?cid=82a1493bv6hajf053ob1xj96geltuzdt3qqo6svpqkv0axpd&ep=v1_gifs_related&rid=200w.gif&ct=s" alt="">
+    <div class="box">
+        <form action="http://localhost:3000/reg" method="POST" id="f1" name="myform" onsubmit="return validateForm()">
+            <h1>Create Your Account</h1>
+        <p class="intro-text">Whether you're ready to give the ultimate gift or in search of hope, welcome to our community. <br>   Sign up now to start your journey of saving lives or finding the support you need. Together, let's make a difference. <br> Please fill out the form below to get started.</p><br>
+            <label for="uname">Username: <br></label>
+            <input type="text" id="uname" name="uname"><br><br>
+            <label for="emailid">Email ID: <br></label>
+            <input type="email" id="emailid" name="emailid"><br><br>
+            <label for="pword">Create Password: <br></label>
+            <input type="password" id="pword" name="pword"><br><br>
+            <label for="cpword">Confirm Password: <br></label>
+            <input type="password" id="cpword" name="cpword"><br><br>
+            <input type="submit" value="Sign up"><br><br>
+            <p class="alternative">or</p>
+            <p>Already have an account? <a href="login.html">Login</a></p><br>
+        </form>
+    </div>
+    
+    
+</body>
+</html>
